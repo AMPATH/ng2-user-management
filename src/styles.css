@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+.mat-toolbar.mat-primary, .mat-raised-button.mat-primary {
+    background: #203864 !important;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+footer .build {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <span class="name"><a href="/" style="color: white; text-decoration: none;">User Management</a></span>
+  <span class="space"></span>
+  <span flex></span>
+  <span class="fill"></span>
+  <span class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
+    <i class="fa fa-user"></i> {{ user.username }}
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu pull-right">
+      <li><a (click)="logout()"><i class="fa fa-sign-out" style="color:red;"></i> Sign Out
+        <i [class.fa-spinner]="loggingOut" [class.fa-spin]="loggingOut" class="fa"></i></a></li>
+    </ul>
+  </span>
+</mat-toolbar>
+<div class="container" style="margin-top: 10px;">
+  <app-manage></app-manage>
+  <app-build-version></app-build-version>
+</div>
+
